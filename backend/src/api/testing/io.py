@@ -12,4 +12,4 @@ class BacktestOutput(BaseModel):
     average_return: float
     sharpe_ratio: float
     volatility: float
-    asset_value_graph: list[float]
+    asset_value_graph: list[list[float]]

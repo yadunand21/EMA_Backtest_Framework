@@ -28,5 +28,5 @@ async def get_testing_results(input: BacktestInput) -> BacktestOutput:
         average_return=metrics["cagr"],
         sharpe_ratio=metrics["sharpe"],
         volatility=metrics["annual_vol"],
-        asset_value_graph=[point["value"] for point in prices],
+        asset_value_graph=[prices.get(ticker) for ticker in input.ticker],
     )
