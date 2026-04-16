@@ -1,0 +1,42 @@
+.results-card {
+    background: #1a1d27;
+    border: 1px solid #2a2d3a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.results-card h2 {
+    margin: 0 0 1.25rem 0;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.metric {
+    background: #0f1117;
+    border: 1px solid #2a2d3a;
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.metric-label {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metric-value {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #4f8ef7;
+}
